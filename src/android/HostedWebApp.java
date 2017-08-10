@@ -1,3 +1,4 @@
+//
 package com.manifoldjs.hostedwebapp;
 
 import android.content.Intent;
@@ -31,7 +32,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
-* This class manipulates the Web App W3C manifest.
+* This class manipulates the Web App W3C manifest.   - Test Max 
 */
 public class HostedWebApp extends CordovaPlugin {
     private static final String LOG_TAG = "HostedWebApp";
