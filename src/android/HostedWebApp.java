@@ -31,12 +31,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
-* This class manipulates the Web App W3C manifest.  -- MaxSoft modified 2017-08-11
+* This class manipulates the Web App W3C manifest.
 */
 public class HostedWebApp extends CordovaPlugin {
-
-    public static CordovaActivity appMainActivity; // -- MaxSoft modified 2017-08-11
-
     private static final String LOG_TAG = "HostedWebApp";
     private static final String DEFAULT_MANIFEST_FILE = "manifest.json";
     private static final String OFFLINE_PAGE = "offline.html";
@@ -58,8 +55,6 @@ public class HostedWebApp extends CordovaPlugin {
     public void pluginInitialize() {
         final HostedWebApp me = HostedWebApp.this;
         this.activity = (CordovaActivity)this.cordova.getActivity();
-
-        appMainActivity = this.activity;        // -- MaxSoft modified 2017-08-11
 
         // Load default manifest file.
         this.loadingManifest = true;
